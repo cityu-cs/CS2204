@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="CryoVit">
+    <meta name="description" content="DisneyLand Hong Kong">
+    <meta name="keywords" content="Disneyland, HongKong, Amusement, Park, Landmark">
+    <title>Home Page - DisneyLand Hong Kong</title>
+</head>
+<body>
+    <header>
+        <img src="../images/banner.svg" alt="DisneyLand Hong Kong Logo" width="300px">
+        <h1>DisneyLand</h1>
+    </header>
+    
+    <div id="info">
+    <dl>
+        <dt>Address</dt>
+            <dd>Hong Kong's Disneyland Resort,<br>
+                Penny's Bay, Lautau Island,<br>
+                Hong Kong</dd>
+        <dt>Tel</dt>
+            <dd>852-3553-8888</dd>
+        <dt>Business Hours</dt>
+            <dd>10:30 AM - 9:30 PM, closed on Tuesdays</dd>
+        <dt>Brief Introduction</dt>
+            <dd>TO BE WRITTEN</dd>
+        <dt>Location</dt>
+            <dd>
+                <img src="../images/map.jpg" alt="DisneyLand Hong Kong Map">
+            </dd>
+    </dl>
+    </div>
+
+    <div id="trailer">
+        <h2>DISNEY PREMIER ACCESS</h2>
+        <b>3-Attractions starting from HK$143</b>
+        <video controls="controls" autoplay="autoplay" loop="loop">
+            <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="booking">
+        <form method="get" action="#">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" value="yyyy-mm-dd" min="2022-12-26" max="2023-12-31"><br>
+            <label for="time">Time</label>
+            <select name="time">
+                <option value="1030">10:30 AM - 2:00 PM</option>
+                <option value="1200">12:00 PM - 3:30 PM</option>
+                <option value="1330">1:30 PM - 5:00 PM</option>
+                <option value="1500">3:00 PM - 6:30 PM</option>
+                <option value="1630">4:30 PM - 8:00 PM</option>
+                <option value="1800">6:00 PM - 9:30 PM</option>
+            </select><br>
+            <label for="visitor">Number of Visitors</label>
+            <input type="number" name="visitor" id="visitor" min="1" max="10" value="1"><br>
+            <br>
+            <input type="submit" value="Check Availability">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <footer>
+        <p>@CityU 2023 – sources of images and text from official website of Hong Kong Disneyland, Wikipedia and Courtesy of Icon pack by Icons8 – designed by 
+            <a href="./design.html">Heijitsu</a>
+        </p>
+    </footer>
+</body>
+</html>
