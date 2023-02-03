@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="CryoVit">
+        <meta name="description" content="DisneyLand Hong Kong">
+        <meta name="keywords" content="Disneyland, HongKong, Amusement, Park, Landmark">
+        <title>Home Page - DisneyLand Hong Kong</title>
+    </head>
+    <body>
+        <header>
+            <img src="../images/banner.svg" alt="DisneyLand Hong Kong Logo" width="300">
+            <h1>DisneyLand</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./order.html">Order</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Menu Block, a form of tickets, dining and hotel booking; NOT YET FUNCTIONAL -->
+        <div id="menu">
+            <h2>Menu</h2>
+            <!-- TODO: strcture the three tabs -->
+            <h3>Tickets</h3>
+            <h3>Dinings</h3>
+            <h3>Hotels</h3>
+
+            <form>
+                <div id="ticket">
+                    <img src="../images/ticket_1.png" alt="1-Day Ticket - Adult">
+                    <label for="ticket_1">1-Day Ticket - Adult</label>
+                    <input type="number" name="ticket_1" id="ticket_1" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                    <img src="../images/ticket_1c.png" alt="1-Day Ticket - Child">
+                    <label for="ticket_1c">1-Day Ticket - Child</label>
+                    <input type="number" name="ticket_1c" id="ticket_1c" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                    <img src="../images/ticket_2.png" alt="2-Day Ticket - Adult">
+                    <label for="ticket_2">2-Day Ticket - Adult</label>
+                    <input type="number" name="ticket_2" id="ticket_2" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                </div>
+                <div id="dining">
+                    <img src="../images/dining_1.png" alt="3-in-1 Park Meal Voucher">
+                    <label for="dining_1">3-in-1 Park Meal Voucher</label>
+                    <input type="number" name="dining_1" id="dining_1" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                    <img src="../images/dining_2.png" alt="2-in-1 Park Meal Voucher">
+                    <label for="dining_2">2-in-1 Park Meal Voucher</label>
+                    <input type="number" name="dining_2" id="dining_2" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                </div>
+                <div id="hotel">
+                    <img src="../images/hotel_1.png" alt="Standard Room">
+                    <label for="hotel_1">Standard Room</label>
+                    <input type="number" name="hotel_1" id="hotel_1" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                    <img src="../images/hotel_2.png" alt="Deluxe Room">
+                    <label for="hotel_2">Deluxe Room</label>
+                    <input type="number" name="hotel_2" id="hotel_2" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                    <img src="../images/hotel_3.png" alt="Sea View Room">
+                    <label for="hotel_3">Sea View Room</label>
+                    <input type="number" name="hotel_3" id="hotel_3" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                    <img src="../images/hotel_4.png" alt="Kingdom Club Room">
+                    <label for="hotel_4">Kingdom Club Room</label>
+                    <input type="number" name="hotel_4" id="hotel_4" min="0" max="10">
+                    <input type="button" value="Add">
+                    <br>
+                </div>
+            </form>
+        </div>
+
+        <!-- Ordered Items Block, a list of ordered items; NOT YET FUNCTIONAL -->
+        <div id="order_item">
+            <h2>Ordered Items</h2>
+            <b>10 Feb 2023 10:00</b>
+            <table>
+                <caption>Table:4-No. of Guests: 3</caption>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TODO: add items -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <a href="#">undo</a>
+        </div>
+
+        <footer>
+            <p>@CityU 2023 - sources of images and text from official website of Hong Kong Disneyland, Wikipedia and Courtesy of Icon pack by 
+                <a href="https://icons8.com/">Icons8</a> - designed by 
+                <a href="./design.html">Heijitsu</a>
+            </p>
+        </footer>
+    </body>
+</html>

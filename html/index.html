@@ -11,15 +11,14 @@
         <header>
             <img src="../images/banner.svg" alt="DisneyLand Hong Kong Logo" width="300">
             <h1>DisneyLand</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./order.html">Order</a></li>
+                </ul>
+            </nav>
         </header>
-        
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./order.html">Order</a></li>
-                <li><a href="./design.html">Design</a></li>
-            </ul>
-        </nav>
 
         <!-- Information Block, with a link to the order page -->
         <div id="info">
@@ -33,7 +32,18 @@
             <dt>Business Hours</dt>
                 <dd>10:30 AM - 9:30 PM, closed on Tuesdays</dd>
             <dt>Brief Introduction</dt>
-                <dd>TO BE WRITTEN</dd>
+                <dd>
+                    <ul>
+                        <li>1st popular amusement park in Hong Kong</li>
+                        <li>2nd Disneyland in Asia</li>
+                        <li>3 themed hotels</li>
+                        <li>40+ dining options</li>
+                        <li>50+ attractions</li>
+                        <li>6 regular parades</li>
+                        <li>7 themed lands</li>
+                        <li>∞ Ultimate Festival of Fun With Family and Friends</li>
+                    </ul>
+                </dd>
             <dt>Location</dt>
                 <dd>
                     <img src="../images/map.jpg" alt="DisneyLand Hong Kong Map">
@@ -54,7 +64,8 @@
             </video>
         </div>
 
-        <!-- Booking block, with a form, later to be linked to the order page -->
+        <!-- Booking block, a form with date, time and number of visitors; NOT YET FUNCTIONAL -->
+        <!-- TODO: a border around the form -->
         <div id="booking">
             <form method="get" action="#">
                 <label for="date">Date</label>
@@ -69,7 +80,7 @@
                     <option value="1800">6:00 PM - 9:30 PM</option>
                 </select><br>
                 <label for="visitor">Number of Visitors</label>
-                <input type="number" name="visitor" id="visitor" min="1" max="10" value="1"><br>
+                <input type="number" name="visitor" id="visitor" min="1" max="10"><br>
                 <br>
                 <input type="submit" value="Check Availability">
                 <input type="reset" value="Reset">
