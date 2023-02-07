@@ -56,8 +56,7 @@
 
         <!-- Trailer Block, with autoplay video -->
         <div id="trailer">
-            <h2>DISNEY PREMIER ACCESS</h2>
-            <b>3-Attractions starting from HK$143</b>
+            <h2 style="text-align: center;">DISNEY PREMIER ACCESS: 3-Attractions starting from HK$143</h2>
             <video controls="controls" autoplay="autoplay" loop="loop">
                 <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -65,25 +64,27 @@
         </div>
 
         <!-- Booking block, a form with date, time and number of visitors; NOT YET FUNCTIONAL -->
-        <!-- TODO: a border around the form -->
         <div id="booking">
             <form method="get" action="#">
-                <label for="date">Date</label>
-                <input type="date" name="date" id="date" min="2022-12-26" max="2023-12-31"><br>
-                <label for="time">Time</label>
-                <select name="time" id="time">
-                    <option value="1030">10:30 AM - 2:00 PM</option>
-                    <option value="1200">12:00 PM - 3:30 PM</option>
-                    <option value="1330">1:30 PM - 5:00 PM</option>
-                    <option value="1500">3:00 PM - 6:30 PM</option>
-                    <option value="1630">4:30 PM - 8:00 PM</option>
-                    <option value="1800">6:00 PM - 9:30 PM</option>
-                </select><br>
-                <label for="visitor">Number of Visitors</label>
-                <input type="number" name="visitor" id="visitor" min="1" max="10"><br>
-                <br>
-                <input type="submit" value="Check Availability">
-                <input type="reset" value="Reset">
+                <fieldset>
+                    <legend>Booking Information</legend>
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date" min="2022-12-26" max="2023-12-31"><br>
+                    <label for="time">Time:</label>
+                    <select name="time" id="time">
+                        <option value="1030">10:30 AM - 2:00 PM</option>
+                        <option value="1200">12:00 PM - 3:30 PM</option>
+                        <option value="1330">1:30 PM - 5:00 PM</option>
+                        <option value="1500">3:00 PM - 6:30 PM</option>
+                        <option value="1630">4:30 PM - 8:00 PM</option>
+                        <option value="1800">6:00 PM - 9:30 PM</option>
+                    </select><br>
+                    <label for="visitor">Number of Visitors:</label>
+                    <input type="number" name="visitor" id="visitor" min="1" max="10"><br>
+                    <br>
+                    <input type="submit" value="Check Availability">
+                    <input type="reset" value="Reset">
+                </fieldset>
             </form>
         </div>
 
