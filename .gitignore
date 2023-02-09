@@ -1,2 +1,6 @@
+# Provided Material
+_*/
+*.pdf
+
+# Scripts
 *.py
-images_alt
