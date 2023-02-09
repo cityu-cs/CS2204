@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="CryoVit">
         <meta name="description" content="DisneyLand Hong Kong">
-        <meta name="keywords" content="Disneyland, HongKong, Amusement, Park, Landmark">
+        <meta name="keywords" content="Disneyland, Hong Kong, Amusement, Landmark, Attractions">
         <title>Home Page - DisneyLand Hong Kong</title>
     </head>
     <body>
@@ -12,15 +12,15 @@
             <img src="../images/logo.png" alt="DisneyLand Hong Kong Logo" width="300">
             <h1>DisneyLand</h1>
             
-            <nav>
+            <!-- <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./order.html">Order</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
 
-        <!-- Information Block, with a link to the order page -->
+        <!-- Block 1: Information. 5 basic info and a link to order page -->
         <div id="info">
         <dl>
             <dt>Address</dt>
@@ -54,16 +54,17 @@
         </a>
         </div>
 
-        <!-- Trailer Block, with autoplay video -->
+        <!-- Block 2: Trailer. An autoplay loop video -->
         <div id="trailer">
-            <h2 style="text-align: center;">DISNEY PREMIER ACCESS: 3-Attractions starting from HK$143</h2>
+            <h2 style="text-align: center;">DISNEY PREMIER ACCESS: 3-ATTRACTIONS STARTING FROM HK$143</h2>
             <video controls="controls" autoplay="autoplay" loop="loop">
                 <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
+                <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.ogg" type="video/ogg">
                 Your browser does not support the video tag.
             </video>
         </div>
 
-        <!-- Booking block, a form with date, time and number of visitors; NOT YET FUNCTIONAL -->
+        <!-- Block 3: Booking. A form querying date, time and vistors; NOT functional -->
         <div id="booking">
             <form method="get" action="#">
                 <fieldset>
@@ -72,12 +73,11 @@
                     <input type="date" name="date" id="date" min="2022-12-26" max="2023-12-31"><br>
                     <label for="time">Time:</label>
                     <select name="time" id="time">
-                        <option value="1030">10:30 AM - 1:30 PM</option>
+                        <option value="0800">8:00 AM - 10:00 AM</option>
+                        <option value="1000">10:00 AM - 12:00 PM</option>
                         <option value="1200">12:00 PM - 2:00 PM</option>
-                        <option value="1330">1:30 PM - 3:30 PM</option>
-                        <option value="1500">3:00 PM - 5:00 PM</option>
-                        <option value="1630">4:30 PM - 6:30 PM</option>
-                        <option value="1800">6:00 PM - 8:00 PM</option>
+                        <option value="1400">2:00 PM - 4:00 PM</option>
+                        <option value="1600">4:00 PM - 6:00 PM</option>
                     </select><br>
                     <label for="visitor">Number of Visitors:</label>
                     <input type="number" name="visitor" id="visitor" min="1" max="10"><br>

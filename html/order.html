@@ -4,26 +4,26 @@
         <meta charset="UTF-8">
         <meta name="author" content="CryoVit">
         <meta name="description" content="DisneyLand Hong Kong">
-        <meta name="keywords" content="Disneyland, HongKong, Amusement, Park, Landmark">
-        <title>Home Page - DisneyLand Hong Kong</title>
+        <meta name="keywords" content="Disneyland, Hong Kong, Amusement, Landmark, Attractions">
+        <title>Order Page - DisneyLand Hong Kong</title>
     </head>
     <body>
         <header>
             <img src="../images/logo.png" alt="DisneyLand Hong Kong Logo" width="300">
             <h1>DisneyLand</h1>
             
-            <nav>
+            <!-- <nav>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./order.html">Order</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
 
-        <!-- Menu Block, a form of tickets, dining and hotel booking; NOT YET FUNCTIONAL -->
+        <!-- Block 1: Menu. 3 tabs for tickets, dinings and hotels; forms NOT functional -->
         <div id="menu">
             <h2>Menu</h2>
-            <!-- TODO: strcture the three tabs -->
+
             <h3>Tickets</h3>
             <h3>Dinings</h3>
             <h3>Hotels</h3>
@@ -47,8 +47,8 @@
                     <input type="number" name="ticket_3" id="ticket_3" min="0" max="10">
                     <input type="button" value="Add"><br>
                 </form>
-            
             </div>
+            
             <div id="dining">
                 <form>
                     <img src="../images/dining-1_alt.png" alt="3-in-1 Park Meal Voucher" width="160">
@@ -85,14 +85,14 @@
                 </form>
                 <form>
                     <img src="../images/hotel-4_alt.png" alt="Kingdom Club Cinderella Suites" width="160">
-                    <label for="hotel_4">Kingdom Club Cinderella Suites (4 persons)</label>
+                    <label for="hotel_4">Kingdom Club Cinderella Suites (4 Guests)</label>
                     <input type="number" name="hotel_4" id="hotel_4" min="0" max="10">
                     <input type="button" value="Add"><br>
                 </form>
             </div>
         </div>
 
-        <!-- Ordered Items Block, a list of ordered items; NOT YET FUNCTIONAL -->
+        <!-- Block 2: Ordered Items. NOT functional -->
         <div id="order_item">
             <h2>Ordered Items</h2>
             <b>10 Feb 2023 10:00</b>
