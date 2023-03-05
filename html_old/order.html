@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Heijitsu">
+        <meta name="description" content="DisneyLand Hong Kong">
+        <meta name="keywords" content="Disneyland, Hong Kong, Amusement, Landmark, Attractions">
+        <title>Order Page - DisneyLand Hong Kong</title>
+    </head>
+    <body>
+        <header>
+            <img src="../images/logo.png" alt="DisneyLand Hong Kong Logo" width="300">
+            <h1>DisneyLand</h1>
+            
+            <!-- <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./order.html">Order</a></li>
+                </ul>
+            </nav> -->
+        </header>
+
+        <!-- Block 1: Menu. 3 tabs for tickets, dinings and hotels; forms NOT functional -->
+        <div id="menu">
+            <h2>Menu</h2>
+
+            <h3>Tickets</h3>
+            <h3>Dinings</h3>
+            <h3>Hotels</h3>
+
+            <div id="ticket">
+                <form>
+                    <img src="../images/ticket-1_alt.png" alt="1-Day Ticket - Adult" width="160">
+                    <label for="ticket_1">1-Day Ticket - Adult</label>
+                    <input type="number" name="ticket_1" id="ticket_1" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+                <form>
+                    <img src="../images/ticket-2_alt.png" alt="1-Day Ticket - Child" width="160">
+                    <label for="ticket_2">1-Day Ticket - Child</label>
+                    <input type="number" name="ticket_2" id="ticket_2" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+                <form>
+                    <img src="../images/ticket-3_alt.png" alt="Annual Pass - Adult" width="160">
+                    <label for="ticket_3">Annual Pass - Adult</label>
+                    <input type="number" name="ticket_3" id="ticket_3" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+            </div>
+            
+            <div id="dining">
+                <form>
+                    <img src="../images/dining-1_alt.png" alt="3-in-1 Park Meal Voucher" width="160">
+                    <label for="dining_1">3-in-1 Park Meal Voucher</label>
+                    <input type="number" name="dining_1" id="dining_1" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+                <form>
+                    <img src="../images/dining-2_alt.png" alt="Dreamer's Lookout" width="160">
+                    <label for="dining_2">Dreamer's Lookout</label>
+                    <input type="number" name="dining_2" id="dining_2" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+            </div>
+
+            <div id="hotel">
+                <form>
+                    <img src="../images/hotel-1_alt.png" alt="Deluxe Room" width="160">
+                    <label for="hotel_1">Deluxe Room</label>
+                    <input type="number" name="hotel_1" id="hotel_1" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+                <form>
+                    <img src="../images/hotel-2_alt.png" alt="Winter Limited Frozen Room" width="160">
+                    <label for="hotel_2">Winter Limited Frozen Room</label>
+                    <input type="number" name="hotel_2" id="hotel_2" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+                <form>
+                    <img src="../images/hotel-3_alt.png" alt="Explorers Lodge" width="160">
+                    <label for="hotel_3">Explorers Lodge</label>
+                    <input type="number" name="hotel_3" id="hotel_3" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+                <form>
+                    <img src="../images/hotel-4_alt.png" alt="Kingdom Club Cinderella Suites" width="160">
+                    <label for="hotel_4">Kingdom Club Cinderella Suites (4 Guests)</label>
+                    <input type="number" name="hotel_4" id="hotel_4" min="0" max="10">
+                    <input type="button" value="Add"><br>
+                </form>
+            </div>
+        </div>
+
+        <!-- Block 2: Ordered Items. NOT functional -->
+        <div id="order_item">
+            <h2>Ordered Items</h2>
+            <b>10 Feb 2023 10:00</b>
+            <table>
+                <caption>Table:4-No. of Guests: 3</caption>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- TODO: add items -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <a href="#">undo</a>
+        </div>
+
+        <footer>
+            <p>@CityU 2023 - sources of images and text from official website of Hong Kong Disneyland, Wikipedia and Courtesy of Icon pack by 
+                <a href="https://icons8.com/">Icons8</a> - designed by 
+                <a href="./design.html">Heijitsu</a>
+            </p>
+        </footer>
+    </body>
+</html>

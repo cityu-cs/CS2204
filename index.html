@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Heijitsu">
+  <meta name="description" content="The home page contains some basic information and reservation form of Disneyland.">
+  <meta name="keywords" content="information, video, reservation form, disneyland, disney">
+  <title>Home Page - Disneyland Hong Kong</title>
+  <link rel="stylesheet" href="./css/homepage.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div id="header" class="light_border">
+      <div id="header_banner">
+        <img src="./images/logo.png" alt="Disneyland Logo">
+      </div>
+      <div id="header_text">
+        <h1>DisneyLand</h1>
+      </div>
+    </div>
+  </header>
+
+  <div id="welcome" class="dark_border">
+    <p>Welcome</p>
+  </div>
+  <br><br><br>
+
+  <!-- start of index_body -->
+  <div id="index_body">
+    <!-- infomation-->
+    <div id="info" class="light_border">
+        <dl>
+          <dt>Address</dt>
+            <dd>Hong Kong's Disneyland Resort,<br>
+              Penny's Bay, Lautau Island,<br>
+              Hong Kong</dd>
+          <dt>Tel</dt>
+            <dd>852-3553-8888</dd>
+          <dt>Business Hours</dt>
+            <dd>10:30 AM - 9:00 PM, closed on Tuesdays</dd>
+          <dt>Brief Introduction</dt>
+            <dd>
+              <ul>
+                <li>1st popular amusement park in Hong Kong</li>
+                <li>2nd Disneyland in Asia</li>
+                <li>3 themed hotels</li>
+                <li>40+ dining options</li>
+                <li>50+ attractions</li>
+                <li>6 regular parades</li>
+                <li>7 themed lands</li>
+                <li>∞ Infinite Festival of Fun With Family and Friends</li>
+              </ul>
+            </dd>
+          <dt>Location</dt>
+            <dd><img src="./images/map.jpg" alt="Location"></dd>
+        </dl>
+        <div id="order_button">
+          <a href="./html/order.html" target=_blank>
+            <img src="./images/order_button.png" alt="Order Button">
+          </a>
+        </div>
+    </div>
+
+    <div id="contents">
+      <!-- video -->
+      <div id="promotion_information" class="light_border">
+        <h2 class="message">DISNEY PREMIER ACCESS</h2>
+        <h3 class="message">3-ATTRACTIONS STARTING FROM HK$143</h3>
+        <div id="dvideo">
+          <video id="video1" controls="controls" autoplay="autoplay" loop="loop">
+            <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
+            <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <br><br><br>
+
+      <!-- form -->
+      <div id="form">
+        <form action="#" method="get" id="home_form">
+          <fieldset id="reservation_form">
+            <legend>Booking information</legend>
+            <div class="form_content">
+              <label for="Date">Date</label>
+              <input type="date" name="Date" id="Date">
+            </div>
+            <div class="form_content">
+              <label for="Time">Time</label>
+              <select name="Time" id="Time">
+                <option value="8:00-10:00AM">8:00-10:00AM</option>
+                <option value="10:00-12:00PM">10:00-12:00PM</option>
+                <option value="12:00-2:00PM">12:00-2:00PM</option>
+                <option value="2:00-4:00PM">2:00-4:00PM</option>
+                <option value="4:00-6:00PM">4:00-6:00PM</option>
+                <option value="6:00-8:00PM">6:00-8:00PM</option>
+              </select>
+            </div>
+            <div class="form_content">
+              <label for="visitor">No.of Visitors</label>
+              <input type="number" name="No.of Guests" value="" id="visitor">
+            </div>
+            <br>
+            <div class="form_button">
+              <input type="submit" value="Check Availability">
+              <input type="reset" value="Reset">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- end of index_body -->
+
+  <!-- footer -->
+  <footer class="dark_border"> 
+    <p>&copy;CityU 2023 - sources of images and text from official website of Hong Kong Disneyland, Wikipedia and Courtesy of Icon pack by 
+      <a href="https://icons8.com/">Icons8</a> - designed by 
+      <a href="./html/design.html">Heijitsu</a>
+    </p>
+  </footer>
+
+</body>
+</html>

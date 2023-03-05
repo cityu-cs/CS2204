@@ -1,0 +1,161 @@
+/* for index.html */
+
+/* General */
+.light_border {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.dark_border {
+    border: 1px groove gray;
+    border-radius: 5px;
+}
+
+/* Header */
+#header {
+    width: 100%;
+    text-align: center;
+}
+#header > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1%;
+}
+#header_text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+}
+#welcome {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+/* Info */
+#info {
+    /* position: relative; */
+    float: left;
+    width: 40%;
+    margin-bottom: 2%;
+}
+#info dt {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 2%;
+}
+#info dd {
+    margin-left: 4%;
+}
+#info ul {
+    padding-left: 0;
+    margin: 0 auto;
+}
+#info ul > li::marker {
+    content : '';
+}
+#info ul > li {
+    padding-left: 0;
+}
+#info ul > li::first-letter {
+    font-size: 1.125em;
+    font-weight: bold;
+}
+#info dt::after {
+    content: ':';
+}
+#info dd:last-child {
+    margin-right: 4%;
+}
+#info dd > img {
+    width: 100%;
+}
+#info dd > img:hover {
+    cursor: pointer;
+}
+#info dl + a {
+    width: 100%;
+    height: auto;
+}
+/* #info a > img {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+} */
+#order_button {
+    width: 100%;
+    text-align: center;
+}
+#order_button img {
+    max-width: 50%;
+}
+
+/* Contents */
+#contents {
+    float: right;
+    width: 59%;
+}
+
+/* Contents - Video */
+.message {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#contents video {
+    text-align: center;
+    width: 96%;
+    margin: 2%;
+}
+
+/* Contents - Form */
+#form {
+    width: 96%;
+    margin: 2%;
+    position: relative;
+}
+#form legend {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.form_content {
+    margin: 1% 5%;
+}
+.form_content > label::after {
+    content: ':';
+}
+.form_content > input, .form_content > select {
+    box-sizing: border-box;
+    position: absolute;
+    width: 40%;
+    right: 10%;
+    height: 20px;
+}
+.form_button {
+    text-align: center;
+    margin: 1% 5%;
+}
+.form_button > input {
+    width: 40%;
+}
+.form_button > input:first-child {
+    margin-right: 5%;
+}
+.form_button > input:last-child {
+    margin-left: 5%;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    width: 100%;
+    /* margin-top: 2%; */
+    text-align: center;
+}
