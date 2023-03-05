@@ -1,0 +1,68 @@
+/* for navigation in index.html and order.html */
+
+/* .nav_menu {
+    display: none;
+    visibility: hidden;
+} */
+/* nav:hover .nav_menu {
+    display: block;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+} */
+nav, .nav_icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.nav_icon {
+    width: 80px;
+    height: auto;
+    animation: cwRotate;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+.nav_icon:hover {
+    animation-name: cwRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.nav_menu {
+    position: relative;
+    top: 80px;
+    right: 7%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eee;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    /* transition: height 0.3s ease-out; */
+}
+.nav_menu li::marker {
+    content: "";
+}
+.nav_menu a {
+    display: block;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    /* transition: background-color 0.2s ease-out; */
+}
+.nav_menu li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+@keyframes cwRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* If using JavaScript, can implement menu toggle */

@@ -5,7 +5,6 @@
     border: 1px solid lightgray;
     border-radius: 5px;
 }
-
 .dark_border {
     border: 1px groove gray;
     border-radius: 5px;
@@ -25,6 +24,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2em;
 }
+
 #welcome {
     width: 100%;
     text-align: center;
@@ -36,10 +36,12 @@
 
 /* Info */
 #info {
-    /* position: relative; */
     float: left;
     width: 40%;
     margin-bottom: 2%;
+}
+#info dl { /* general */
+    margin-bottom: 0;
 }
 #info dt {
     font-family: 'Times New Roman', Times, serif;
@@ -47,27 +49,27 @@
     font-weight: bold;
     margin-left: 2%;
 }
+#info dt::after {
+    content: ':';
+}
 #info dd {
     margin-left: 4%;
 }
-#info ul {
+#info ul { /* 4th dt, Introduction, list */
     padding-left: 0;
     margin: 0 auto;
 }
-#info ul > li::marker {
-    content : '';
-}
 #info ul > li {
     padding-left: 0;
+}
+#info ul > li::marker {
+    content : '';
 }
 #info ul > li::first-letter {
     font-size: 1.125em;
     font-weight: bold;
 }
-#info dt::after {
-    content: ':';
-}
-#info dd:last-child {
+#info dd:last-child { /* 5th dt, Location, image */
     margin-right: 4%;
 }
 #info dd > img {
@@ -80,14 +82,7 @@
     width: 100%;
     height: auto;
 }
-/* #info a > img {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-} */
-#order_button {
+#order_button { /* after #info */
     width: 100%;
     text-align: center;
 }
@@ -132,7 +127,7 @@
     content: ':';
 }
 .form_content > input, .form_content > select {
-    box-sizing: border-box;
+    box-sizing: border-box; /* to make appearance same on all browsers */
     position: absolute;
     width: 40%;
     right: 10%;
@@ -157,5 +152,6 @@ footer {
     clear: both;
     width: 100%;
     /* margin-top: 2%; */
+    /* not necessary because set margin-bottom for #info */
     text-align: center;
 }

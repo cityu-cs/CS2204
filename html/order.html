@@ -6,7 +6,11 @@
   <meta name="description" content="The order page can help you order the tickets, dinings and hotels. It will also show what you have ordered. ">
   <meta name="keywords" content="ticket menu, dinings menu, hotel menu, ordered items, disneyland, disney">
   <title>Order Page - DisneyLand Hong Kong</title>
+  <link rel="stylesheet" href="../css/order.css">
+  <link rel="stylesheet" href="../css/navigation.css">
 </head>
+<!-- Do notice that this file is at ./html/ while homepage is at ./ -->
+<!-- all files refered should begin with ../ -->
 <body>
   <!-- header -->
   <header>
@@ -24,7 +28,16 @@
     <p>Welcome</p>
   </div>
   <br><br><br>
-  <!-- menu -->
+
+  <!-- navigation bar -->
+  <nav>
+    <img src="../images/compass.png" alt="Navigation" class="nav_icon">
+    <ul class="nav_menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./order.html">Order</a></li>
+      <li><a href="./order.html#order_table">Check Order</a></li>
+    </ul>
+  </nav>
 
   <!-- start of order_body -->
   <div id="order_body">
