@@ -4,30 +4,27 @@
     display: none;
     visibility: hidden;
 } */
-/* nav:hover .nav_menu {
-    display: block;
-    visibility: visible;
-    transition: all 0.3s ease-in-out;
-} */
 nav, .nav_icon {
     position: fixed;
     top: 0;
     right: 0;
 }
-.nav_icon {
+.nav_icon, .nav_icon:active {
     width: 80px;
     height: auto;
-    animation: cwRotate;
+}
+.nav_icon {
+    animation: enterRotate;
     animation-duration: 3s;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease;
 }
-.nav_icon:hover {
-    animation-name: cwRotate;
-    animation-duration: 3s;
+/* .nav_icon:hover {
+    animation-name: circRotate;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
+} */
 .nav_menu {
     position: relative;
     top: 80px;
@@ -39,7 +36,8 @@ nav, .nav_icon {
     overflow: hidden;
     border: 1px solid lightgray;
     border-radius: 5px;
-    /* transition: height 0.3s ease-out; */
+    /* transition: transform 5s ease;
+    transform: translate(-100%, 0); */
 }
 .nav_menu li::marker {
     content: "";
@@ -49,20 +47,31 @@ nav, .nav_icon {
     color: black;
     padding: 8px;
     text-decoration: none;
-    /* transition: background-color 0.2s ease-out; */
+    transition: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
-.nav_menu li a:hover {
+.nav_menu a:hover {
     background-color: #555;
     color: white;
 }
 
-@keyframes cwRotate {
+@keyframes enterRotate {
+    0% {
+        top: -80px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 0;
+        transform: rotate(360deg);
+    }
+}
+
+/* @keyframes circRotate {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
     }
-}
-
-/* If using JavaScript, can implement menu toggle */
+} */
