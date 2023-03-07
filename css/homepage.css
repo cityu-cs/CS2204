@@ -34,12 +34,18 @@
     font-size: 1.25em;
 }
 
-/* Info */
+/* Double column */
 #info {
     float: left;
     width: 40%;
     margin-bottom: 2%;
 }
+#contents {
+    float: right;
+    width: 59%;
+}
+
+/* Info */
 #info dl { /* general */
     margin-bottom: 0;
 }
@@ -88,12 +94,6 @@
 }
 #order_button img {
     max-width: 50%;
-}
-
-/* Contents */
-#contents {
-    float: right;
-    width: 59%;
 }
 
 /* Contents - Video */
@@ -152,6 +152,6 @@ footer {
     clear: both;
     width: 100%;
     /* margin-top: 2%; */
-    /* not necessary because set margin-bottom for #info */
+    /* have set margin-bottom for #info */
     text-align: center;
 }

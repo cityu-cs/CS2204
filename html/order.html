@@ -6,8 +6,9 @@
   <meta name="description" content="The order page can help you order the tickets, dinings and hotels. It will also show what you have ordered. ">
   <meta name="keywords" content="ticket menu, dinings menu, hotel menu, ordered items, disneyland, disney">
   <title>Order Page - DisneyLand Hong Kong</title>
-  <link rel="stylesheet" href="../css/order.css">
-  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/order.css" media="screen">
+  <link rel="stylesheet" href="../css/navigation.css" media="screen">
+  <link rel="stylesheet" href="../css/printOrder.css" media="print">
 </head>
 <!-- Do notice that this file is at ./html/ while homepage is at ./ -->
 <!-- all files refered should begin with ../ -->
@@ -35,21 +36,21 @@
     <ul class="nav_menu">
       <li><a href="../index.html">Home</a></li>
       <li><a href="./order.html">Order</a></li>
-      <li><a href="./order.html#order_table">Check Order</a></li>
+      <li><a href="./order.html" onclick="window.print(); return false;">Print Order</a></li>
     </ul>
   </nav>
 
   <!-- start of order_body -->
   <div id="order_body">
-    <!-- tabs -->
-    <div id="menu">
+    <!-- start of menu -->
+    <div id="menu" class="light_border">
       <h4>Menu</h4>
       <div id="menu_content">
-        <h5 id="ticketLabel">Tickets</h5>
-        <h5 id="diningLabel">Dinings</h5>
-        <h5 id="hotelLabel">Hotels</h5>
+        <div id="ticket_label" class="menu_label">Tickets</div>
+        <div id="dining_label" class="menu_label">Dinings</div>
+        <div id="hotel_label" class="menu_label">Hotels</div>
         <!-- tickets-->
-        <div id="menu_ticket">
+        <div id="ticket_tab" class="menu_tab">
           <form action="#" id="ticket1" class="form0">
             <img src="../images/ticket-1_alt.png" alt="1-Day Ticket - Adult" id="t1-img">
             <label for="t1-qty">1-Day Ticket - Adult</label>
@@ -70,7 +71,7 @@
           </form>
         </div>
         <!-- dinings -->
-        <div id="menu_dining">
+        <div id="dining_tab" class="menu_tab">
           <form action="#" id="dining1" class="form0">
             <img src="../images/dining-1_alt.png" alt="3-in-1 Park Meal Voucher" id="d1-img">
             <label for="d1-qty">3-in-1 Park Meal Voucher</label>
@@ -85,7 +86,7 @@
           </form>
         </div>
         <!-- hotels -->
-        <div id="menu_hotel">
+        <div id="hotel_tab" class="menu_tab">
           <form action="#" id="hotel1" class="form0">
             <img src="../images/hotel-1_alt.png" alt="Deluxe Room" id="h1-img">
             <label for="h1-qty">Deluxe Room</label>
@@ -93,62 +94,64 @@
             <button type="button" id="h1">Add</button>
           </form>
           <form action="#" id="hotel2" class="form0">
-            <img src="../images/hotel-2_alt.png" alt="Winter Limited Frozen Room" id="h2-img">
-            <label for="h2-qty">Winter Limited Frozen Room</label>
+            <img src="../images/hotel-2_alt.png" alt="Winter-only Frozen Room" id="h2-img">
+            <label for="h2-qty">Winter-only Frozen Room</label>
             <input name="h2-qty" type="number" id="h2-qty">
             <button type="button" id="h2">Add</button>
           </form>
           <form action="#" id="hotel3" class="form0">
-            <img src="../images/hotel-3_alt.png" alt="Explorers Lodge" id="h3-img">
-            <label for="h3-qty">Explorers Lodge</label>
+            <img src="../images/hotel-3_alt.png" alt="Cinderella Suites" id="h3-img">
+            <label for="h3-qty">Cinderella Suites</label>
             <input name="h3-qty" type="number" id="h3-qty">
             <button type="button" id="h3">Add</button>
           </form>
           <form action="#" id="hotel4" class="form0">
-            <img src="../images/hotel-4_alt.png" alt="Kingdom Club Cinderella Suites" id="h4-img">
-            <label for="h4-qty">Kingdom Club Cinderella Suites</label>
+            <img src="../images/hotel-4_alt.png" alt="Explorers Lodge" id="h4-img">
+            <label for="h4-qty">Explorers Lodge</label>
             <input name="h4-qty" type="number" id="h4-qty">
             <button type="button" id="h4">Add</button>
           </form>
         </div>
       </div>
     </div>
+    <!-- end of menu -->
+
+    <!-- start of table -->
+    <div id="order_table" class="light_border">
+      <h2>Ordered Items</h2>
+      <h4>10 Feb 2023 10:00</h4>
+      <table>
+        <caption>Table:4-No. of Guests 3</caption>
+        <thead>
+          <tr>
+            <th class="description">Description</th>
+            <th class="quantity">Qty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- table body -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="description" id="total">Total</td>
+            <td class="quantity" id="totalqty">0</td>
+          </tr>
+        </tfoot>
+      </table>
+      <label>
+        <a id="undo" href="#">undo</a>
+      </label>
+    </div>
+    <!-- end of table -->
   </div>
   <!-- end of order_body -->
 
-  <!-- start of table -->
-  <div id="order_table">
-    <h2>Ordered Items</h2>
-    <h4>10 Feb 2023 10:00</h4>
-    <table>
-      <caption>Table:4-No. of Guests 3</caption>
-      <thead>
-        <tr>
-          <th class="description">Description</th>
-          <th class="quantity">Qty</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- table body -->
-      </tbody>
-      <tfoot>
-        <tr>
-          <td class="description" id="total">Total</td>
-          <td class="quantity" id="totalqty">0</td>
-        </tr>
-      </tfoot>
-    </table>
-    <label>
-      <a id="undo">undo</a>
-    </label>
-  </div>
-  <!-- end of table -->
 
   <!-- footer -->
   <footer class="dark_border"> 
     <p>&copy;CityU 2023 - sources of images and text from official website of Hong Kong Disneyland, Wikipedia and Courtesy of Icon pack by 
       <a href="https://icons8.com/">Icons8</a> - designed by 
-      <a href="./html/design.html">Heijitsu</a>
+      <a href="./design.html">Heijitsu</a>
     </p>
   </footer>
   

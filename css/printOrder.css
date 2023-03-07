@@ -1,0 +1,59 @@
+/* for order.html, media=print */
+
+/* Header */
+#header {
+    width: auto;
+    text-align: center;
+}
+#header > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1%;
+}
+#header_text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+}
+#welcome {
+    width: auto;
+    text-align: center;
+}
+
+/* Hidden elements */
+nav, #menu, footer {
+    display: none;
+    visibility: hidden;
+}
+
+/* Table */
+table {
+    width: 100%;
+}
+#order_table > h2, h2 + h4, caption {
+    text-align: center;
+}
+th, td {
+    background-color: white;
+}
+.description {
+    width: 70%;
+    text-align: left;
+}
+.quantity {
+    width: 30%;
+    text-align: right;
+}
+#total {
+    text-align: right;
+}
+
+/* Table - Undo */
+#undo {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+#undo:visited {
+    color: black;
+}

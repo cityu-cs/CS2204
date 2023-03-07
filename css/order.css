@@ -9,6 +9,11 @@
     border: 1px groove gray;
     border-radius: 5px;
 }
+/* .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
 
 /* Header */
 #header {
@@ -34,10 +39,140 @@
     font-size: 1.25em;
 }
 
+/* Double column */
+#menu {
+    float: left;
+    width: 77%;
+}
+#order_table {
+    float: right;
+    width: 22%;
+    margin-bottom: 2%; /* because order_table height is fixed */
+}
+h2, h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Menu */
+#menu > h4 {
+    display: inline;
+}
+.menu_label {
+    width: 33.33%;
+    box-sizing: border-box;
+    /* calculate border as part of width so it won't overflow
+    also makes the align with form easier */
+    display: inline;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    float: left;
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.5s ease;
+}
+.menu_label:hover {
+    background-color: white;
+}
+.menu_tab {
+    display: none;
+}
+.menu_tab > form {
+    display: inline;
+    width: 33.33%;
+    text-align: left;
+    float: left;
+    /* margin-bottom: 2%; */
+    /* will cause space between menu_tab and form - cannot use margin */
+    /* border: 1px double red; */
+}
+form img {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-right: 1%;
+    /* margin-left: 1%; */
+}
+form input {
+    width: 40%;
+    display: block; /* Let button on a new line */
+}
+
+/* Menu - Tickets */
+#ticket_label:hover ~ #ticket_tab,
+#ticket_tab:hover {
+    display: inline-block;
+    width: 99.99%;
+    box-sizing: border-box;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Menu - Dinings */
+#dining_label:hover ~ #dining_tab,
+#dining_tab:hover {
+    display: inline-block;
+    width: 99.99%;
+    box-sizing: border-box;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Menu - Hotels */
+#hotel_label:hover ~ #hotel_tab,
+#hotel_tab:hover {
+    display: inline-block;
+    width: 99.99%;
+    box-sizing: border-box;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Table */
+table {
+    width: 100%;
+}
+#order_table > h2, h2 + h4, caption {
+    text-align: center;
+}
+th, td {
+    background-color: lightgray;
+}
+.description {
+    width: 70%;
+    text-align: left;
+}
+.quantity {
+    width: 30%;
+    text-align: right;
+}
+#total {
+    text-align: right;
+}
+
+/* Table - Undo */
+#undo {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+#undo:visited {
+    color: black;
+}
+
 /* Footer */
 footer {
     clear: both;
     width: 100%;
-    margin-top: 2%;
+    /* margin-top: 2%; */
+    /* have set margin-bottom for #order_table */
     text-align: center;
 }
