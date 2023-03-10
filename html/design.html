@@ -23,12 +23,12 @@
           <dt><span class="code">fixed</span> positioning</dt>
             <dd>
               the <span class="code">nav</span> class and the navigation icon is fixed to the top right corner of the browser body. This also takes the elements out of normal flow.
-              (<span class="code">common.css</span>, Line 39)
+              (<span class="code">default.css</span>, Line 39)
             </dd>
           <dt><span class="code">relative</span> positioning</dt>
             <dd>
               the navigation menu, a child of <span class="code">nav</span>, is positioned lower (relative to its original place) to ensure it is not covered by the navigation icon.
-              (<span class="code">common.css</span>, Line 52)
+              (<span class="code">default.css</span>, Line 52)
             </dd>
           <dt><span class="code">absolute</span> positioning</dt>
             <dd>
@@ -44,13 +44,14 @@
             <dd>
               <ul>
                 <li>
-                  <span class="code">border-radius</span> is used to create round corner for many <class="code">div</span> elements.
-                  (<span class="code">common.css</span>, Line 6, 10)
+                  <span class="code">border-radius</span> is used to create round corner for many <span class="code">div</span> elements.
+                  (<span class="code">default.css</span>, Line 6, 10)
                 </li>
                 <li>
                   <span class="code">border-radius</span> is also used for <span class="code">menu_label</span> in order page, with only topleft and topright corner rounded.
                   (<span class="code">order.css</span>, Line 36)
                 </li>
+              </ul>
             </dd>
           <dt><span class="imp">Box Shadow</span></dt>
             <dd>
@@ -62,7 +63,7 @@
               <ul>
                 <li>
                   <span class="code">transition</span> is used to create a color and background color change effect when the mouse hovers over an item in the navigation menu.
-                  (<span class="code">common.css</span>, Line 75)
+                  (<span class="code">default.css</span>, Line 75)
                 </li>
                 <li>
                   A similar effect is also applied for the <span class="code">menu_label</span> in order page.
@@ -75,11 +76,11 @@
               <ul>
                 <li>
                   <span class="code">animation</span> makes the navigation icon flys in with rotation when the page is loaded.
-                  (<span class="code">common.css</span>, Line 46)
+                  (<span class="code">default.css</span>, Line 46)
                 </li>
                 <li>
                   At the same time, the navigation menu fades in.
-                  (<span class="code">common.css</span>, Line 62)
+                  (<span class="code">default.css</span>, Line 62)
                 </li>
               </ul>
             </dd>
@@ -87,13 +88,33 @@
 
         <h4>Style grouping</h4>
         <p>All the CSS content is grouped into 5 files in the <span class="code">/css</span> folder.</p>
-        <p>No inline CSS is used in this website.</p>
+        <p>No inline or embedded style is used in this website.</p>
         <p>The files are:</p>
         <dl>
-          <dt><span class="code">common.css</span></dt>
+          <dt><span class="code">default.css</span></dt>
             <dd>
-              the common style found in <span class="code">index.html</span> and <span class="code">order.html</span>.
+              the common design theme across the site, for <span class="code">index.html</span> and <span class="code">order.html</span>  (screen version).
               Including the <span class="imp">header, footer, navigation and border style</span>.
+            </dd>
+          <dt><span class="code">homepage.css</span></dt>
+            <dd>
+              specific style for <span class="code">index.html</span>.
+              Including the <span class="imp">information, video and form block</span>.
+            </dd>
+          <dt><span class="code">order.css</span></dt>
+            <dd>
+              specific style for <span class="code">order.html</span> (screen version).
+              Including the <span class="imp">order menu and order table block</span>.
+            </dd>
+          <dt><span class="code">printOrder.css</span></dt>
+            <dd>
+              specific style for printing the <span class="code">order.html</span>.
+              All the blocks other than the <span class="imp">header and order table</span> are not displayed.
+              These two blocks are also adjusted to fit the print width.
+            </dd>
+          <dt><span class="code">design.css</span></dt>
+            <dd>
+              specific style for this page, <span class="code">design.html</span>.
             </dd>
         </dl>
       </div>
@@ -118,7 +139,7 @@
         <li>Images of the tickets, dinings and hotels are all from
           <a href="https://www.hongkongdisneyland.com/">Hong Kong Disneyland</a>
         </li>
-      </li>
+      </ul>
     </div>
   </body>
 </html>

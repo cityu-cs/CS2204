@@ -65,7 +65,7 @@
 /* Contents - Video */
 .message {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-weight: bold;
 }
 #contents video {
@@ -82,7 +82,7 @@
     box-shadow: 5px 10px 5px lightgray;
 }
 #form legend {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
