@@ -39,7 +39,7 @@ dt::after {
 
 /* list */
 ul {
-    margin: 0;
+    margin: auto;
 }
 li::marker {
     content: '✧ ';

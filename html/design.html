@@ -1,145 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Heijitsu">
-    <meta name="description" content="This is an additional free format Web page for you to acknowledge the sources of information used in your design. If you use images, icon or text obtained from the Internet, write the source and links in this page. " >
-    <meta name="keywords" content="design,name,acknowledgement">
-    <link rel="stylesheet" href="../css/design.css" type="text/css">
-    <title>Design Page</title>
-  </head>
-  <body>
-    <div id="design">
-      <h2>Design</h2>
-      <p>Name: Heijitsu</p>
-      <p>SID: CryoVit</p>
-      <div id="css_design">
-        <h3>CW2</h3>
-        <h4>Position Scheme</h4>
-        <p>This website use a mixture of positioning to better fit the content.</p>
-        <p>Most of the elements use the default <span class="code">static</span> positioning.</p>
-        <p>Below is a brief explanation of other meaningful positioning used in this website:</p>
-        <dl>
-          <dt><span class="code">fixed</span> positioning</dt>
-            <dd>
-              the <span class="code">nav</span> class and the navigation icon is fixed to the top right corner of the browser body. This also takes the elements out of normal flow.
-              (<span class="code">default.css</span>, Line 39)
-            </dd>
-          <dt><span class="code">relative</span> positioning</dt>
-            <dd>
-              the navigation menu, a child of <span class="code">nav</span>, is positioned lower (relative to its original place) to ensure it is not covered by the navigation icon.
-              (<span class="code">default.css</span>, Line 52)
-            </dd>
-          <dt><span class="code">absolute</span> positioning</dt>
-            <dd>
-              the <span class="code">input</span> and <span class="code">select</span> in the homepage form is positioned with 10% right empty space (relative to its parent, the form) to align the three boxes vertically.  This also takes the elements out of normal flow.
-              (<span class="code">homepage.css</span>, Line 98)
-            </dd>
-        </dl>
+<!-- this file is at /html/ while homepage is at / -->
+<!-- all file links should begin with ../ -->
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Heijitsu">
+  <meta name="description" content="This is an additional free format Web page for you to acknowledge the sources of information used in your design. If you use images, icon or text obtained from the Internet, write the source and links in this page. " >
+  <meta name="keywords" content="design,name,acknowledgement">
+  <link rel="stylesheet" href="../css/design.css" media="all" type="text/css">
+  <link rel="stylesheet" href="../css/navigation.css" media="screen" type="text/css">
+  <title>Design Page</title>
+</head>
+<body>
 
-        <h4>CSS3 Features</h4>
-        <p>Many CSS3 features are introduced in this website, including but not limited to:</p>
-        <dl>
-          <dt><span class="imp">Round Corner</span></dt>
-            <dd>
-              <ul>
-                <li>
-                  <span class="code">border-radius</span> is used to create round corner for many <span class="code">div</span> elements.
-                  (<span class="code">default.css</span>, Line 6, 10)
-                </li>
-                <li>
-                  <span class="code">border-radius</span> is also used for <span class="code">menu_label</span> in order page, with only topleft and topright corner rounded.
-                  (<span class="code">order.css</span>, Line 36)
-                </li>
-              </ul>
-            </dd>
-          <dt><span class="imp">Box Shadow</span></dt>
-            <dd>
-              <span class="code">box-shadow</span> is used to decorate the form in the homepage.
-              (<span class="code">homepage.css</span>, Line 82)
-            </dd>
-          <dt><span class="imp">Transitions</span></dt>
-            <dd>
-              <ul>
-                <li>
-                  <span class="code">transition</span> is used to create a color and background color change effect when the mouse hovers over an item in the navigation menu.
-                  (<span class="code">default.css</span>, Line 75)
-                </li>
-                <li>
-                  A similar effect is also applied for the <span class="code">menu_label</span> in order page.
-                  (<span class="code">order.css</span>, Line 37)
-                </li>
-              </ul>
-            </dd>
-          <dt><span class="imp">Animations</span></dt>
-            <dd>
-              <ul>
-                <li>
-                  <span class="code">animation</span> makes the navigation icon flys in with rotation when the page is loaded.
-                  (<span class="code">default.css</span>, Line 46)
-                </li>
-                <li>
-                  At the same time, the navigation menu fades in.
-                  (<span class="code">default.css</span>, Line 62)
-                </li>
-              </ul>
-            </dd>
-        </dl>
+  <!-- navigation bar -->
+  <nav>
+    <img src="../images/compass.png" alt="Navigation" class="nav_icon">
+    <ul class="nav_menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./order.html">Order</a></li>
+      <li><a href="./design.html">About Us</a></li>
+    </ul>
+  </nav>
 
-        <h4>Style grouping</h4>
-        <p>All the CSS content is grouped into 5 files in the <span class="code">/css</span> folder.</p>
-        <p>No inline or embedded style is used in this website.</p>
-        <p>The files are:</p>
-        <dl>
-          <dt><span class="code">default.css</span></dt>
-            <dd>
-              the common design theme across the site, for <span class="code">index.html</span> and <span class="code">order.html</span>  (screen version).
-              Including the <span class="imp">header, footer, navigation and border style</span>.
-            </dd>
-          <dt><span class="code">homepage.css</span></dt>
-            <dd>
-              specific style for <span class="code">index.html</span>.
-              Including the <span class="imp">information, video and form block</span>.
-            </dd>
-          <dt><span class="code">order.css</span></dt>
-            <dd>
-              specific style for <span class="code">order.html</span> (screen version).
-              Including the <span class="imp">order menu and order table block</span>.
-            </dd>
-          <dt><span class="code">printOrder.css</span></dt>
-            <dd>
-              specific style for printing the <span class="code">order.html</span>.
-              All the blocks other than the <span class="imp">header and order table</span> are not displayed.
-              These two blocks are also adjusted to fit the print width.
-            </dd>
-          <dt><span class="code">design.css</span></dt>
-            <dd>
-              specific style for this page, <span class="code">design.html</span>.
-            </dd>
-        </dl>
-      </div>
+  <div id="design">
+    <h2>Design</h2>
+    <p>Name: Heijitsu</p>
+    <p>SID: CryoVit</p>
+    <div id="css_design">
+      <h3>CW2</h3>
+      <h4>Position Scheme</h4>
+      <p>This website use a mixture of positioning to better fit the content.</p>
+      <p>Most of the elements use the default <span class="code">static</span> positioning.</p>
+      <p>Below is a brief explanation of other meaningful positioning used in this website:</p>
+      <dl>
+        <dt><span class="code">relative</span> positioning</dt>
+          <dd>
+            <ul>
+              <li>
+                the navigation menu, a child of <span class="code">nav</span>, is positioned lower (relative to its original place) to ensure it is not covered by the navigation icon.
+                (<span class="code">navigation.css</span>, Line 17)
+              </li>
+              <li>
+                the <span class="code">form</span> in home page is set to <span class="code">relative</span> to serve as positioning ancestor for the <span class="code">input</span> and <span class="code">select</span>.
+                (see the next item, <span class="code">homepage.css</span>, Line 81)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="code">absolute</span> positioning</dt>
+          <dd>
+            the form <span class="code">input</span> and <span class="code">select</span> in home page is positioned with 10% right empty space (relative to the form) to be aligned vertically.  This also takes the elements out of normal flow.
+            (<span class="code">homepage.css</span>, Line 98)
+          </dd>
+        <dt><span class="code">fixed</span> positioning</dt>
+          <dd>
+            the <span class="code">nav</span> class and the navigation icon is fixed to the top right corner of the browser body. This also takes the elements out of normal flow.
+            (<span class="code">navigation.css</span>, Line 4)
+          </dd>
+      </dl>
+
+      <h4>CSS3 Features</h4>
+      <p>Many CSS3 features are introduced in this website, including but not limited to:</p>
+      <dl>
+        <dt><span class="imp">Round Corner</span></dt>
+          <dd>
+            <ul>
+              <li>
+                <span class="code">border-radius</span> is used to create round corner for many <span class="code">div</span> elements.
+                (<span class="code">default.css</span>, Line 6, 10)
+              </li>
+              <li>
+                <span class="code">border-radius</span> is also used for <span class="code">menu_label</span> in order page, with only topleft and topright corner rounded.
+                (<span class="code">order.css</span>, Line 36)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="imp">Box Shadow</span></dt>
+          <dd>
+            <span class="code">box-shadow</span> is used to decorate the form in the homepage.
+            (<span class="code">homepage.css</span>, Line 82)
+          </dd>
+        <dt><span class="imp">Transitions</span></dt>
+          <dd>
+            <ul>
+              <li>
+                <span class="code">transition</span> is used to create a color and background color change effect when the mouse hovers over an item in the navigation menu.
+                (<span class="code">navigation.css</span>, Line 40)
+              </li>
+              <li>
+                A similar effect is applied for the <span class="code">menu_label</span> in order page.
+                (<span class="code">order.css</span>, Line 37)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="imp">Animations</span></dt>
+          <dd>
+            <ul>
+              <li>
+                <span class="code">animation</span> makes the navigation icon flys in with rotation when the page is loaded.
+                (<span class="code">default.css</span>, Line 11)
+              </li>
+              <li>
+                At the same time, the navigation menu fades in.
+                (<span class="code">default.css</span>, Line 27)
+              </li>
+            </ul>
+          </dd>
+      </dl>
+
+      <h4>Style grouping</h4>
+      <p>All the CSS content is grouped into 6 files in the <span class="code">/css</span> folder.</p>
+      <p>No inline or embedded style is used in this website.</p>
+      <p>The files are:</p>
+      <dl>
+        <dt><span class="code">default.css</span></dt>
+          <dd>
+            the common design theme across the site, for <span class="code">index.html</span> and <span class="code">order.html</span> (on screen).<br>
+            Including the <span class="imp">header and welcome</span> (Line 14-35), <span class="imp">footer</span> (Line 38-42) and <span class="imp">border style</span> (Line 4-11).
+          </dd>
+        <dt><span class="code">navigation.css</span></dt>
+          <dd>
+            navigation style, for all pages (on screen, that is, will be hidden in print).<br>
+            Including the <span class="imp">navigation icon</span> (Line 3-15), <span class="imp">navigation menu</span> (Line 16-47) and <span class="imp">keyframe functions</span> (Line 49-70).
+          </dd>
+        <dt><span class="code">homepage.css</span></dt>
+          <dd>
+            specific style for <span class="code">index.html</span>.<br>
+            Including the <span class="imp">double-column layout</span> (Line 4-12), <span class="imp">information block</span> (Line 15-63), <span class="imp">video block</span> (Line 66-75), <span class="imp">form block</span> (Line 78-115).
+          </dd>
+        <dt><span class="code">order.css</span></dt>
+          <dd>
+            specific style for <span class="code">order.html</span> (on screen).<br>
+            Including the <span class="imp">double-column layout</span> (Line 4-12), <span class="imp">order form</span> (Line 19-94, including menu tab changing effect) and <span class="imp">order table</span> (Line 97-127).
+          </dd>
+        <dt><span class="code">printOrder.css</span></dt>
+          <dd>
+            specific style for printing the <span class="code">order.html</span>.<br>
+            All the blocks other than the <span class="imp">header and order table</span> are not displayed.<br>
+            These two blocks are also adjusted to fit the print width. Header (Line 4-20), order table (Line 29-59).
+          </dd>
+        <dt><span class="code">design.css</span></dt>
+          <dd>
+            specific style for this page, <span class="code">design.html</span>.
+          </dd>
+      </dl>
     </div>
+  </div>
 
-    <div id="acknowledgement">
-      <h2>Acknowledgement</h2>
-      <h3>Home Page</h3>
-      <ul>
-        <li>Image of the map is from 
-            <a href="http://www.jetsetenterprises.com/cruise/Asian%20Disneylands.htm">Jet Set Enterprises</a>
-        </li>
-        <li>Image of the "Book Now" button is based on 
-          <a href="https://icons8.com/icon/11821/new-ticket">icon "New Ticket" from Icons8</a> (text added)
-        </li>
-        <li>The introduction of the park is based on statistics from
-          <a href="https://en.wikipedia.org/wiki/Hong_Kong_Disneyland">Wikipedia</a> (fictionalized)
-        </li>
-      </ul>
-      <h3>Order Page</h3>
-      <ul>
-        <li>Images of the tickets, dinings and hotels are all from
-          <a href="https://www.hongkongdisneyland.com/">Hong Kong Disneyland</a>
-        </li>
-      </ul>
-    </div>
-  </body>
+  <div id="acknowledgement">
+    <h2>Acknowledgement</h2>
+    <h3>Home Page</h3>
+    <ul>
+      <li>Image of the map is from 
+          <a href="http://www.jetsetenterprises.com/cruise/Asian%20Disneylands.htm">Jet Set Enterprises</a>
+      </li>
+      <li>Image of the "Book Now" button is based on 
+        <a href="https://icons8.com/icon/11821/new-ticket">icon "New Ticket" from Icons8</a> (text added)
+      </li>
+      <li>The introduction of the park is based on statistics from
+        <a href="https://en.wikipedia.org/wiki/Hong_Kong_Disneyland">Wikipedia</a> (fictionalized)
+      </li>
+    </ul>
+    <h3>Order Page</h3>
+    <ul>
+      <li>Images of the tickets, dinings and hotels are all from
+        <a href="https://www.hongkongdisneyland.com/">Hong Kong Disneyland</a>
+      </li>
+    </ul>
+  </div>
+</body>
 </html>

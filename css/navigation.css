@@ -1,0 +1,71 @@
+/* Navigation */
+
+nav, .nav_icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.nav_icon {
+    width: 80px;
+    height: auto;
+    animation: enterRotate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.nav_menu {
+    position: relative;
+    top: 80px;
+    right: 7%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #eee;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+.nav_menu li::marker {
+    content: "";
+}
+.nav_menu a {
+    display: block;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    transition: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.nav_menu a:hover {
+    background-color: #555;
+    color: white;
+}
+
+@keyframes enterRotate {
+    0% {
+        right: -20%;
+        transform: rotate(0deg);
+    }
+    50% {
+        right: 0%;
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
