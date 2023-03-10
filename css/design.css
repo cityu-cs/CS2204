@@ -1,0 +1,46 @@
+/* for design.html */
+
+body > div {
+    margin: 0 auto;
+    width: 960px;
+    padding: 0 20px;
+}
+
+/* heading */
+h2, h3, h4 {
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+/* span */
+.code {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: #000;
+}
+.imp {
+    font-weight: bold;
+}
+
+/* data list */
+dt::before {
+    content: '✦ ';
+}
+
+dt::after {
+    content: ':';
+}
+
+/* list */
+ul {
+    margin: 0;
+}
+li::marker {
+    content: '✧ ';
+}

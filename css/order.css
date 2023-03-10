@@ -1,44 +1,5 @@
 /* for order.html */
 
-/* General */
-.light_border {
-    border: 1px solid lightgray;
-    border-radius: 5px;
-}
-.dark_border {
-    border: 1px groove gray;
-    border-radius: 5px;
-}
-/* .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
-/* Header */
-#header {
-    width: 100%;
-    text-align: center;
-}
-#header > div {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 1%;
-}
-#header_text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em;
-}
-
-#welcome {
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    font-size: 1.25em;
-}
-
 /* Double column */
 #menu {
     float: left;
@@ -106,7 +67,6 @@ form input {
 #ticket_label:hover ~ #ticket_tab,
 #ticket_tab:hover {
     display: inline-block;
-    width: 99.99%;
     box-sizing: border-box;
     border-width: 0 1px 1px 1px;
     border-style: solid;
@@ -117,7 +77,6 @@ form input {
 #dining_label:hover ~ #dining_tab,
 #dining_tab:hover {
     display: inline-block;
-    width: 99.99%;
     box-sizing: border-box;
     border-width: 0 1px 1px 1px;
     border-style: solid;
@@ -128,7 +87,6 @@ form input {
 #hotel_label:hover ~ #hotel_tab,
 #hotel_tab:hover {
     display: inline-block;
-    width: 99.99%;
     box-sizing: border-box;
     border-width: 0 1px 1px 1px;
     border-style: solid;
@@ -153,9 +111,9 @@ th, td {
     width: 30%;
     text-align: right;
 }
-#total {
+/* #total {
     text-align: right;
-}
+} */
 
 /* Table - Undo */
 #undo {
@@ -168,11 +126,3 @@ th, td {
     color: black;
 }
 
-/* Footer */
-footer {
-    clear: both;
-    width: 100%;
-    /* margin-top: 2%; */
-    /* have set margin-bottom for #order_table */
-    text-align: center;
-}

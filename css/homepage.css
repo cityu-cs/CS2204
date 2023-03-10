@@ -1,39 +1,5 @@
 /* for index.html */
 
-/* General */
-.light_border {
-    border: 1px solid lightgray;
-    border-radius: 5px;
-}
-.dark_border {
-    border: 1px groove gray;
-    border-radius: 5px;
-}
-
-/* Header */
-#header {
-    width: 100%;
-    text-align: center;
-}
-#header > div {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 1%;
-}
-#header_text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em;
-}
-
-#welcome {
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    font-size: 1.25em;
-}
-
 /* Double column */
 #info {
     float: left;
@@ -113,6 +79,7 @@
     width: 96%;
     margin: 2%;
     position: relative;
+    box-shadow: 5px 10px 5px lightgray;
 }
 #form legend {
     font-family: 'Times New Roman', Times, serif;
@@ -147,11 +114,3 @@
     margin-left: 5%;
 }
 
-/* Footer */
-footer {
-    clear: both;
-    width: 100%;
-    /* margin-top: 2%; */
-    /* have set margin-bottom for #info */
-    text-align: center;
-}

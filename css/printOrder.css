@@ -43,9 +43,9 @@ th, td {
     width: 30%;
     text-align: right;
 }
-#total {
+/* #total {
     text-align: right;
-}
+} */
 
 /* Table - Undo */
 #undo {

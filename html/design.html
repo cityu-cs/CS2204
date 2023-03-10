@@ -5,32 +5,120 @@
     <meta name="author" content="Heijitsu">
     <meta name="description" content="This is an additional free format Web page for you to acknowledge the sources of information used in your design. If you use images, icon or text obtained from the Internet, write the source and links in this page. " >
     <meta name="keywords" content="design,name,acknowledgement">
+    <link rel="stylesheet" href="../css/design.css" type="text/css">
     <title>Design Page</title>
   </head>
+  <body>
     <div id="design">
       <h2>Design</h2>
       <p>Name: Heijitsu</p>
       <p>SID: CryoVit</p>
+      <div id="css_design">
+        <h3>CW2</h3>
+        <h4>Position Scheme</h4>
+        <p>This website use a mixture of positioning to better fit the content.</p>
+        <p>Most of the elements use the default <span class="code">static</span> positioning.</p>
+        <p>Below is a brief explanation of other meaningful positioning used in this website:</p>
+        <dl>
+          <dt><span class="code">fixed</span> positioning</dt>
+            <dd>
+              the <span class="code">nav</span> class and the navigation icon is fixed to the top right corner of the browser body. This also takes the elements out of normal flow.
+              (<span class="code">common.css</span>, Line 39)
+            </dd>
+          <dt><span class="code">relative</span> positioning</dt>
+            <dd>
+              the navigation menu, a child of <span class="code">nav</span>, is positioned lower (relative to its original place) to ensure it is not covered by the navigation icon.
+              (<span class="code">common.css</span>, Line 52)
+            </dd>
+          <dt><span class="code">absolute</span> positioning</dt>
+            <dd>
+              the <span class="code">input</span> and <span class="code">select</span> in the homepage form is positioned with 10% right empty space (relative to its parent, the form) to align the three boxes vertically.  This also takes the elements out of normal flow.
+              (<span class="code">homepage.css</span>, Line 98)
+            </dd>
+        </dl>
+
+        <h4>CSS3 Features</h4>
+        <p>Many CSS3 features are introduced in this website, including but not limited to:</p>
+        <dl>
+          <dt><span class="imp">Round Corner</span></dt>
+            <dd>
+              <ul>
+                <li>
+                  <span class="code">border-radius</span> is used to create round corner for many <class="code">div</span> elements.
+                  (<span class="code">common.css</span>, Line 6, 10)
+                </li>
+                <li>
+                  <span class="code">border-radius</span> is also used for <span class="code">menu_label</span> in order page, with only topleft and topright corner rounded.
+                  (<span class="code">order.css</span>, Line 36)
+                </li>
+            </dd>
+          <dt><span class="imp">Box Shadow</span></dt>
+            <dd>
+              <span class="code">box-shadow</span> is used to decorate the form in the homepage.
+              (<span class="code">homepage.css</span>, Line 82)
+            </dd>
+          <dt><span class="imp">Transitions</span></dt>
+            <dd>
+              <ul>
+                <li>
+                  <span class="code">transition</span> is used to create a color and background color change effect when the mouse hovers over an item in the navigation menu.
+                  (<span class="code">common.css</span>, Line 75)
+                </li>
+                <li>
+                  A similar effect is also applied for the <span class="code">menu_label</span> in order page.
+                  (<span class="code">order.css</span>, Line 37)
+                </li>
+              </ul>
+            </dd>
+          <dt><span class="imp">Animations</span></dt>
+            <dd>
+              <ul>
+                <li>
+                  <span class="code">animation</span> makes the navigation icon flys in with rotation when the page is loaded.
+                  (<span class="code">common.css</span>, Line 46)
+                </li>
+                <li>
+                  At the same time, the navigation menu fades in.
+                  (<span class="code">common.css</span>, Line 62)
+                </li>
+              </ul>
+            </dd>
+        </dl>
+
+        <h4>Style grouping</h4>
+        <p>All the CSS content is grouped into 5 files in the <span class="code">/css</span> folder.</p>
+        <p>No inline CSS is used in this website.</p>
+        <p>The files are:</p>
+        <dl>
+          <dt><span class="code">common.css</span></dt>
+            <dd>
+              the common style found in <span class="code">index.html</span> and <span class="code">order.html</span>.
+              Including the <span class="imp">header, footer, navigation and border style</span>.
+            </dd>
+        </dl>
+      </div>
     </div>
 
-    <div id="ack">
+    <div id="acknowledgement">
       <h2>Acknowledgement</h2>
-      <dl>
-        <dt>Home Page</dt>
-          <dd>Image of the map is from 
+      <h3>Home Page</h3>
+      <ul>
+        <li>Image of the map is from 
             <a href="http://www.jetsetenterprises.com/cruise/Asian%20Disneylands.htm">Jet Set Enterprises</a>
-          </dd>
-          <dd>Image of the "Book Now" button is based on 
-            <a href="https://icons8.com/icon/11821/new-ticket">icon "New Ticket" from Icons8</a>, text added by me
-          </dd>
-          <dd>The introduction of the park is based on statistics from
-            <a href="https://en.wikipedia.org/wiki/Hong_Kong_Disneyland">Wikipedia</a>, fictionalized by me
-          </dd>
-        <dt>Order Page</dt>
-          <dd>Images of the tickets, dinings and hotels are all from
-            <a href="https://www.hongkongdisneyland.com/">Hong Kong Disneyland</a>
-          </dd>
-      </dl>
+        </li>
+        <li>Image of the "Book Now" button is based on 
+          <a href="https://icons8.com/icon/11821/new-ticket">icon "New Ticket" from Icons8</a> (text added)
+        </li>
+        <li>The introduction of the park is based on statistics from
+          <a href="https://en.wikipedia.org/wiki/Hong_Kong_Disneyland">Wikipedia</a> (fictionalized)
+        </li>
+      </ul>
+      <h3>Order Page</h3>
+      <ul>
+        <li>Images of the tickets, dinings and hotels are all from
+          <a href="https://www.hongkongdisneyland.com/">Hong Kong Disneyland</a>
+        </li>
+      </li>
     </div>
   </body>
 </html>
