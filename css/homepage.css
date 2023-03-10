@@ -65,7 +65,7 @@
 /* Contents - Video */
 .message {
     text-align: center;
-    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 #contents video {

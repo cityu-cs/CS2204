@@ -88,7 +88,7 @@
                 (<span class="code">navigation.css</span>, Line 40)
               </li>
               <li>
-                A similar effect is applied for the <span class="code">menu_label</span> in order page.
+                A similar effect (background color change) is applied for the <span class="code">menu_label</span> in order page.
                 (<span class="code">order.css</span>, Line 37)
               </li>
             </ul>
@@ -97,7 +97,7 @@
           <dd>
             <ul>
               <li>
-                <span class="code">animation</span> makes the navigation icon flys in with rotation when the page is loaded.
+                When the page is loaded, <span class="code">animation</span> makes the navigation icon flys in with rotation, and then rotate for another 360 degrees.
                 (<span class="code">default.css</span>, Line 11)
               </li>
               <li>
@@ -109,13 +109,13 @@
       </dl>
 
       <h4>Style grouping</h4>
-      <p>All the CSS content is grouped into 6 files in the <span class="code">/css</span> folder.</p>
+      <p>All the CSS content is grouped into 6 files in the <span class="code">/css</span> folder, and HTML files are linked to them.</p>
       <p>No inline or embedded style is used in this website.</p>
       <p>The files are:</p>
       <dl>
         <dt><span class="code">default.css</span></dt>
           <dd>
-            the common design theme across the site, for <span class="code">index.html</span> and <span class="code">order.html</span> (on screen).<br>
+            the common theme across the site, for <span class="code">index.html</span> and <span class="code">order.html</span> (on screen).<br>
             Including the <span class="imp">header and welcome</span> (Line 14-35), <span class="imp">footer</span> (Line 38-42) and <span class="imp">border style</span> (Line 4-11).
           </dd>
         <dt><span class="code">navigation.css</span></dt>
@@ -126,22 +126,74 @@
         <dt><span class="code">homepage.css</span></dt>
           <dd>
             specific style for <span class="code">index.html</span>.<br>
-            Including the <span class="imp">double-column layout</span> (Line 4-12), <span class="imp">information block</span> (Line 15-63), <span class="imp">video block</span> (Line 66-75), <span class="imp">form block</span> (Line 78-115).
+            Including the <span class="imp">two-column layout</span> (Line 4-12), <span class="imp">information block</span> (Line 15-63), <span class="imp">promotion block</span> (Line 66-75), <span class="imp">booking block</span> (Line 78-115).
           </dd>
         <dt><span class="code">order.css</span></dt>
           <dd>
             specific style for <span class="code">order.html</span> (on screen).<br>
-            Including the <span class="imp">double-column layout</span> (Line 4-12), <span class="imp">order form</span> (Line 19-94, including menu tab changing effect) and <span class="imp">order table</span> (Line 97-127).
+            Including the <span class="imp">two-column layout</span> (Line 4-12), <span class="imp">order menu</span> (Line 19-94) and <span class="imp">ordered item</span> (Line 97-127).
           </dd>
         <dt><span class="code">printOrder.css</span></dt>
           <dd>
             specific style for printing the <span class="code">order.html</span>.<br>
-            All the blocks other than the <span class="imp">header and order table</span> are not displayed.<br>
-            These two blocks are also adjusted to fit the print width. Header (Line 4-20), order table (Line 29-59).
+            All the blocks other than the <span class="imp">header and ordered item</span> are not displayed.<br>
+            These two blocks are also adjusted to fit the print width. Header (Line 4-20), ordered item (Line 29-59).
           </dd>
         <dt><span class="code">design.css</span></dt>
           <dd>
             specific style for this page, <span class="code">design.html</span>.
+          </dd>
+      </dl>
+      <p>Below is an more detailed explanation of different groups of style for <span class="code">order.html</span>.</p>
+      <dl>
+        <dt>Default theme (header, footer, border style)</dt>
+          <dd>
+            <span class="code">default.css</span>.
+          </dd>
+        <dt>Double column layout</dt>
+          <dd>
+            The order page is divided into order menu and ordered item blocks.<br>
+            <span class="code">order.css</span> Line 4-12 arrange them in a double column layout.
+          </dd>
+        <dt>Order menu</dt>
+          <dd>
+            <span class="code">order.css</span>.
+            <ul>
+              <li>
+                Line 19-41 is for the three menu labels ("Tickets", "Dinings" and "Hotels"); Line 37-41 specifies the transition of background color when the mouse hovers over the label.
+              </li>
+              <li>
+                Line 42-44 hides the menu tabs.
+              </li>
+              <li>
+                Line 45-64 is for the style of menu tabs when they are displayed.
+              </li>
+              <li>
+                Line 67-94 further specifies the properties (as <span class="code">inline-block</span>) of the menu tabs when they are shown, and more importantly, let them display when the mouse hover over corresponding menu label or on the menu tab.
+              </li>
+            </ul>
+          </dd>
+        <dt>Ordered item table</dt>
+          <dd>
+            <span class="code">order.css</span>.
+            <ul>
+              <li>Line 97-105 is for the overall style and the messages outside the table.</li>
+              <li>Line 106-116 is for table column width and text alignment.</li>
+              <li>Line 119-127 is for the <span class="code">undo</span> link.</li>
+            </ul>
+          </dd>
+        <dt>Navigation icon and menu</dt>
+          <dd>
+            <span class="code">navigation.css</span>.
+          </dd>
+        <dt>Printed Style</dt>
+          <dd>
+            <span class="code">printOrder.css</span>.
+            <ul>
+              <li>Line 4-20 is for the header.</li>
+              <li>Line 29-59 is for the ordered item table.</li>
+              <li>Line 23-26 is for hiding other blocks.</li>
+            </ul>
           </dd>
       </dl>
     </div>
