@@ -46,6 +46,12 @@ nav, .nav_icon {
     color: white;
 }
 
+@media print {
+    nav, .nav_icon, .nav_menu {
+        display: none;
+    }
+}
+
 @keyframes enterRotate {
     0% {
         right: -20%;

@@ -121,6 +121,7 @@ th, td {
     width: 100%;
     text-align: center;
     text-decoration: none;
+    color: black;
 }
 #undo:visited {
     color: black;

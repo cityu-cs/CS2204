@@ -50,11 +50,11 @@
 #info dd > img:hover {
     cursor: pointer;
 }
-#info dl + a {
+#info dl + a { /* button after #info */
     width: 100%;
     height: auto;
 }
-#order_button { /* after #info */
+#order_button { 
     width: 100%;
     text-align: center;
 }

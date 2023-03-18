@@ -8,7 +8,7 @@
   <meta name="description" content="This is an additional free format Web page for you to acknowledge the sources of information used in your design. If you use images, icon or text obtained from the Internet, write the source and links in this page. " >
   <meta name="keywords" content="design,name,acknowledgement">
   <link rel="stylesheet" href="../css/design.css" media="all" type="text/css">
-  <link rel="stylesheet" href="../css/navigation.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="../css/navigation.css" media="all" type="text/css">
   <title>Design Page</title>
 </head>
 <body>
@@ -24,12 +24,12 @@
   </nav>
 
   <div id="design">
-    <h2>Design</h2>
+    <h1>Design</h1>
     <p>Name: Heijitsu</p>
     <p>SID: CryoVit</p>
     <div id="css_design">
-      <h3>CW2</h3>
-      <h4>Position Scheme</h4>
+      <h2>CW2</h2>
+      <h3>Position Scheme</h3>
       <p>This website use a mixture of positioning to better fit the content.</p>
       <p>Most of the elements use the default <span class="code">static</span> positioning.</p>
       <p>Below is a brief explanation of other meaningful positioning used in this website:</p>
@@ -43,7 +43,7 @@
               </li>
               <li>
                 the <span class="code">form</span> in home page is set to <span class="code">relative</span> to serve as positioning ancestor for the <span class="code">input</span> and <span class="code">select</span>.
-                (see the next item, <span class="code">homepage.css</span>, Line 81)
+                (see the next item; <span class="code">homepage.css</span>, Line 81)
               </li>
             </ul>
           </dd>
@@ -59,7 +59,7 @@
           </dd>
       </dl>
 
-      <h4>CSS3 Features</h4>
+      <h3>CSS3 Features</h3>
       <p>Many CSS3 features are introduced in this website, including but not limited to:</p>
       <dl>
         <dt><span class="imp">Round Corner</span></dt>
@@ -77,7 +77,7 @@
           </dd>
         <dt><span class="imp">Box Shadow</span></dt>
           <dd>
-            <span class="code">box-shadow</span> is used to decorate the form in the homepage.
+            <span class="code">box-shadow</span> is used to decorate the form in the homepage. A shadow at the right bottom sides makes the form look like a card.
             (<span class="code">homepage.css</span>, Line 82)
           </dd>
         <dt><span class="imp">Transitions</span></dt>
@@ -88,7 +88,7 @@
                 (<span class="code">navigation.css</span>, Line 40)
               </li>
               <li>
-                A similar effect (background color change) is applied for the <span class="code">menu_label</span> in order page.
+                A similar effect (only background color change) is applied for the <span class="code">menu_label</span> in order page.
                 (<span class="code">order.css</span>, Line 37)
               </li>
             </ul>
@@ -97,41 +97,151 @@
           <dd>
             <ul>
               <li>
-                When the page is loaded, <span class="code">animation</span> makes the navigation icon flys in with rotation, and then rotate for another 360 degrees.
-                (<span class="code">default.css</span>, Line 11)
+                when the page is loaded, <span class="code">animation</span> makes the navigation icon flys in with rotation, and then rotate for another 360 degrees.
+                (<span class="code">navigation.css</span>, Line 11)
               </li>
               <li>
                 At the same time, the navigation menu fades in.
-                (<span class="code">default.css</span>, Line 27)
+                (<span class="code">navigation.css</span>, Line 27)
               </li>
             </ul>
           </dd>
       </dl>
 
-      <h4>Style grouping</h4>
+      <h3>Style grouping and Layout</h3>
       <p>All the CSS content is grouped into 6 files in the <span class="code">/css</span> folder, and HTML files are linked to them.</p>
       <p>No inline or embedded style is used in this website.</p>
-      <p>The files are:</p>
+      <p>Below is a brief on how the style is grouped and how the layout is designed:</p>
+      <dl>
+        <dt><span class="imp">Common Theme</span></dt>
+          <dd>
+            two sets of border (with different color and style) serve as <span class="code">div</span>-level separation.
+            (<span class="code">default.css</span>, Line 4-11)
+          </dd>
+        <dt><span class="code">header</span></dt>
+          <dd>
+            the common header across the sitee (excluding <span class="code">design.html</span>). Banner and title is centered horizontally and vertically as a whole.
+            (<span class="code">default.css</span>, Line 14-35)
+          </dd>
+        <dt><span class="imp">Double Column Layout</span></dt>
+          <dd>
+            used for both <span class="code">index.html</span> and <span class="code">order.html</span>. <span class="code">float</span> is used to create the two columns, which takes up different percentage of the screen width as needed.
+            <ul>
+              <li>
+                In <span class="code">index.html</span>, the left column is used for the basic information, and the right column is used for the promotion video and the form.
+                (<span class="code">homepage.css</span>, Line 4-12)
+              </li>
+              <li>
+                In <span class="code">order.html</span>, the left column is used for the menu, and the right column is used for the order table.
+                (<span class="code">order.css</span>, Line 4-12)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="code">footer</span></dt>
+          <dd>
+            the common footer across the site (excluding <span class="code">design.html</span>).
+            <span class="code">clear</span> is used to clear the <span class="code">float</span> of the two columns, making it start from a new line.
+            (<span class="code">default.css</span>, Line 38-42)
+          </dd>
+        <dt><span class="code">nav</span></dt>
+          <dd>
+            the navigation is fixed to the top right corner of the browser body, and used in all three pages.<br>
+            Additionally, with <span class="imp">media query</span>, the navigation won't be printed out.
+            (<span class="code">navigation.css</span>, Line 3-53)
+          </dd>
+        <dt><span class="code">index.html</span> - Information Block - <span class="code">homepage.css</span></dt>
+          <dd>
+            Different kinds of elements are contained in the information block. Thus, the styling is divided into 4 parts:
+            <ul>
+              <li>
+                <span class="code">dl, dt, dd</span>: the general style for the data list.
+                (Line 15-29)
+              </li>
+              <li>
+                <span class="code">ul, li</span>: style for the list in the Brief Introduction part. Pseudo-element <span class="code">::marker</span> removes the bullet points and <span class="code">::first-letter</span> stress the first character.
+                (Line 30-43)
+              </li>
+              <li>
+                <span class="code">img</span>: style for the image in the Location part.
+                (Line 44-52)
+              </li>
+              <li>
+                <span class="code">a</span>: style for the button following the data list.
+                (Line 53-63)
+                </li>
+            </ul>
+          </dd>
+        <dt><span class="code">index.html</span> - Promotion + Form Blocks - <span class="code">homepage.css</span></dt>
+          <dd>
+            The promotion video and booking form are in the same block for double column layout. However, they are also separated into two sub-divs for styling.
+            <ul>
+              <li>
+                Message before video (Line 66-70), video (Line 71-75)
+              </li>
+              <li>
+                Form general style and legend (Line 78-95), Form input (Line 96-102), Submit and reset buttons (Line 103-115)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="code">order.html</span> - Menu Block - <span class="code">order.css</span></dt>
+          <dd>
+            Menu block is only visible on screen. It is hidden on print.
+            <ul>
+              <li>
+                Line 19-41 is for the three menu labels ("Tickets", "Dinings" and "Hotels"); Line 37-41 specifies the transition of background color when the mouse hovers over the label.
+              </li>
+              <li>
+                Line 42-44 hides the menu tabs, which is their default state.
+              </li>
+              <li>
+                Line 45-64 is for the style of menu tabs when they are displayed.
+              </li>
+              <li>
+                Line 67-94 further specifies the properties (as <span class="code">inline-block</span>) of the menu tabs when they are shown, and more importantly, let them display when the mouse hover over corresponding menu label or on the menu tab.
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="code">order.html</span> - Order Item Block - <span class="code">order.css</span></dt>
+          <dd>
+            The following style is only for screen as well.
+            <ul>
+              <li>Line 97-105 is for the overall style and the messages outside the table.</li>
+              <li>Line 106-116 is for table column width and text alignment.</li>
+              <li>Line 119-128 is for the <span class="code">undo</span> link.</li>
+            </ul>
+          </dd>
+        <dt><span class="code">order.html</span> Printed style</dt>
+          <dd>
+            Styling for print is specified in a different file, <span class="code">printOrder.css</span>.
+            <ul>
+              <li>Line 4-20 is for the header. The width is reduced to the same as table width.</li>
+              <li>Line 29-59 is for the ordered item table.</li>
+              <li>Line 23-26 is for hiding other blocks.</li>
+            </ul>
+          </dd>
+      </dl>
+
+      <p>An alternative explanation in views of files:</p>
       <dl>
         <dt><span class="code">default.css</span></dt>
           <dd>
-            the common theme across the site, for <span class="code">index.html</span> and <span class="code">order.html</span> (on screen).<br>
+            the common theme across the site, for <span class="code">index.html</span> and <span class="code">order.html</span> (for screen).<br>
             Including the <span class="imp">header and welcome</span> (Line 14-35), <span class="imp">footer</span> (Line 38-42) and <span class="imp">border style</span> (Line 4-11).
           </dd>
         <dt><span class="code">navigation.css</span></dt>
           <dd>
-            navigation style, for all pages (on screen, that is, will be hidden in print).<br>
+            navigation style, for all pages (for screen).<br>
             Including the <span class="imp">navigation icon</span> (Line 3-15), <span class="imp">navigation menu</span> (Line 16-47) and <span class="imp">keyframe functions</span> (Line 49-70).
           </dd>
         <dt><span class="code">homepage.css</span></dt>
           <dd>
             specific style for <span class="code">index.html</span>.<br>
-            Including the <span class="imp">two-column layout</span> (Line 4-12), <span class="imp">information block</span> (Line 15-63), <span class="imp">promotion block</span> (Line 66-75), <span class="imp">booking block</span> (Line 78-115).
+            Including the <span class="imp">double column layout</span> (Line 4-12), <span class="imp">information block</span> (Line 15-63), <span class="imp">promotion block</span> (Line 66-75), <span class="imp">booking block</span> (Line 78-115).
           </dd>
         <dt><span class="code">order.css</span></dt>
           <dd>
-            specific style for <span class="code">order.html</span> (on screen).<br>
-            Including the <span class="imp">two-column layout</span> (Line 4-12), <span class="imp">order menu</span> (Line 19-94) and <span class="imp">ordered item</span> (Line 97-127).
+            specific style for <span class="code">order.html</span> (for screen).<br>
+            Including the <span class="imp">double column layout</span> (Line 4-12), <span class="imp">order menu</span> (Line 19-94) and <span class="imp">ordered item</span> (Line 97-128).
           </dd>
         <dt><span class="code">printOrder.css</span></dt>
           <dd>
@@ -144,7 +254,7 @@
             specific style for this page, <span class="code">design.html</span>.
           </dd>
       </dl>
-      <p>Below is an more detailed explanation of different groups of style for <span class="code">order.html</span>.</p>
+      <!-- <p>For example, below is an more detailed explanation of how different groups of style for <span class="code">order.html</span> is grouped into different files.</p>
       <dl>
         <dt>Default theme (header, footer, border style)</dt>
           <dd>
@@ -195,13 +305,13 @@
               <li>Line 23-26 is for hiding other blocks.</li>
             </ul>
           </dd>
-      </dl>
+      </dl> -->
     </div>
   </div>
 
   <div id="acknowledgement">
-    <h2>Acknowledgement</h2>
-    <h3>Home Page</h3>
+    <h1>Acknowledgement</h1>
+    <h2>Home Page</h2>
     <ul>
       <li>Image of the map is from 
           <a href="http://www.jetsetenterprises.com/cruise/Asian%20Disneylands.htm">Jet Set Enterprises</a>
@@ -213,7 +323,7 @@
         <a href="https://en.wikipedia.org/wiki/Hong_Kong_Disneyland">Wikipedia</a> (fictionalized)
       </li>
     </ul>
-    <h3>Order Page</h3>
+    <h2>Order Page</h2>
     <ul>
       <li>Images of the tickets, dinings and hotels are all from
         <a href="https://www.hongkongdisneyland.com/">Hong Kong Disneyland</a>
