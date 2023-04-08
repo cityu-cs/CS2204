@@ -4,6 +4,8 @@ This repository contains the web project for CS2204 - Fundamentals of Internet A
 
 The project, featuring HTML, CSS and JavaScript, is a simple cilent-side web application for a fictional amusement park.
 
+**This project has been set to private.**
+
 ### Deployment and Release
 
 * The project *will be* deployed to [GitHub Pages](https://pages.github.com/). The URL will be [https://cityu-cs.github.io/cs2204/](https://cityu-cs.github.io/cs2204/).
@@ -12,7 +14,9 @@ The project, featuring HTML, CSS and JavaScript, is a simple cilent-side web app
 
 ### Notes
 
-If you are a future student of this course, you will be required to develop a similar project, but the theme and details will be different. You are welcome to use this repository as a reference, but please do not copy any code or content.
+* The main purpose of this project is only to track the development process **for my own reference**.
+
+* If you are a future student of this course, you will be required to develop a similar project, but the theme and details will be different. You are welcome to use this repository as a reference, but please do not copy any code or content.
 
 ### An Index of Previous Years' Projects
 

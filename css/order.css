@@ -4,6 +4,8 @@
 #menu {
     float: left;
     width: 77%;
+    padding: 3px 0;
+    text-align: center;
 }
 #order_table {
     float: right;
@@ -13,7 +15,6 @@
 h2, h4 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 
 /* Menu */
 #menu > h4 {
@@ -29,16 +30,16 @@ h2, h4 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     float: left;
-    background-color: lightgray;
+    padding: 3px 0;
     border-color: black;
     border-style: solid;
     border-width: 1px 1px 0 1px;
     border-radius: 5px 5px 0 0;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.15s ease;
 }
-.menu_label:hover {
+/* .menu_label:hover {
     background-color: white;
-}
+} */
 .menu_tab {
     display: none;
 }
@@ -47,7 +48,7 @@ h2, h4 {
     width: 33.33%;
     text-align: left;
     float: left;
-    /* margin-bottom: 2%; */
+    padding: 1% 0;
     /* will cause space between menu_tab and form - cannot use margin */
     /* border: 1px double red; */
 }
@@ -64,34 +65,34 @@ form input {
 }
 
 /* Menu - Tickets */
-#ticket_label:hover ~ #ticket_tab,
+/* #ticket:hover ~ #ticket_tab,
 #ticket_tab:hover {
     display: inline-block;
     box-sizing: border-box;
     border-width: 0 1px 1px 1px;
     border-style: solid;
     border-color: black;
-}
+} */
 
 /* Menu - Dinings */
-#dining_label:hover ~ #dining_tab,
+/* #dining:hover ~ #dining_tab,
 #dining_tab:hover {
     display: inline-block;
     box-sizing: border-box;
     border-width: 0 1px 1px 1px;
     border-style: solid;
     border-color: black;
-}
+} */
 
 /* Menu - Hotels */
-#hotel_label:hover ~ #hotel_tab,
+/* #hotel:hover ~ #hotel_tab,
 #hotel_tab:hover {
     display: inline-block;
     box-sizing: border-box;
     border-width: 0 1px 1px 1px;
     border-style: solid;
     border-color: black;
-}
+} */
 
 /* Table */
 table {
@@ -111,9 +112,12 @@ th, td {
     width: 30%;
     text-align: right;
 }
-/* #total {
-    text-align: right;
-} */
+.even > td {
+    background-color: white;
+}
+thead th, tfoot td {
+    background-color: lightblue;
+}
 
 /* Table - Undo */
 #undo {
@@ -125,4 +129,7 @@ th, td {
 }
 #undo:visited {
     color: black;
+}
+#undo:hover {
+    cursor: pointer;
 }

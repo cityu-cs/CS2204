@@ -63,7 +63,7 @@
 }
 
 /* Contents - Video */
-.message {
+#message {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -112,4 +112,7 @@
 }
 .form_button > input:last-child {
     margin-left: 5%;
+}
+#form_error {
+    text-align: center;
 }

@@ -28,6 +28,7 @@ nav, .nav_icon {
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 .nav_menu li::marker {
     content: "";

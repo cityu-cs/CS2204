@@ -27,7 +27,41 @@
     <h1>Design</h1>
     <p>Name: Heijitsu</p>
     <p>SID: CryoVit</p>
-    <div id="css_design">
+    <div>
+      <h2>CW3</h2>
+      <h3>Event Handlers</h3>
+      <p>Event handlers are registered in different ways in this website. This includes:</p>
+      <dl>
+        <dt>HTML attribute</dt>
+          <dd>
+            <ul>
+              <li>
+                Video switching in homepage: <span class="code">onended</span> attribute set to <span class="code">switchVideo()</span> in HTML. (<span class="code">index.html</span>, Line 85 and <span class="code">homepage.js</span>, Line 48)
+              </li>
+            </ul>
+          </dd>
+        <dt>Event handler attribute set by JavaScript</dt>
+          <dd>
+            <ul>
+              <li>
+                Form submit button in homepage: <span class="code">onclick</span> attribute set to <span class="code">validateForm</span> by JavaScript. (<span class="code">homepage.js</span>, Line 33)    
+              </li>
+              <li>
+                Menu and label switching in the order page: label <span class="code">onclick</span> attribute set to <span class="code">switchMenu</span> by JavaScript. (<span class="code">order.js</span>, Line 16)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="code">addEventListener</span></dt>
+          <dd>
+            <ul>
+              <li>
+                "Add" buttons in the order page menu: adding <span class="code">click</span> event listener to <span class="code">tableAdd</span>. (<span class="code">order.js</span>, Line 25)
+              </li>
+              <li>
+                Undo link in the order page: adding <span class="code">click</span> event listener to <span class="code">tableRemove</span>. (<span class="code">order.js</span>, Line 29)
+              </li>
+            </ul>
+          </dd>
       <h2>CW2</h2>
       <h3>Position Scheme</h3>
       <p>This website use a mixture of positioning to better fit the content.</p>

@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./css/default.css" media="all" type="text/css">
   <link rel="stylesheet" href="./css/navigation.css" media="all" type="text/css">
   <link rel="stylesheet" href="./css/homepage.css" media="all" type="text/css">
+  <script src="https://personal.cs.cityu.edu.hk/~cs2204/cs2204cw3.js" type="text/javascript"></script>
+  <script src="./js/homepage.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -78,14 +80,11 @@
     <div id="contents">
       <!-- video -->
       <div id="promotion_information" class="light_border">
-        <h2 class="message">DISNEY PREMIER ACCESS</h2>
-        <h3 class="message">3-ATTRACTIONS STARTING FROM HK$143</h3>
+        <h3 id="message"></h3>
         <div id="dvideo">
-          <video id="video1" controls="controls" autoplay="autoplay" loop="loop">
-            <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4">
-            <source src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.ogg" type="video/ogg">
+          <video id="vid" controls="controls" autoplay="autoplay" muted="muted" src="https://personal.cs.cityu.edu.hk/~cs2204/video/Castle.mp4" type="video/mp4" onended="switchVideo()">
             Your browser does not support the video tag.
-          </video>
+          </video> <!-- loop video cannot trigger onended event -->
         </div>
       </div>
       <br><br><br>
@@ -115,6 +114,7 @@
               <input type="number" name="visitor" value="" id="visitor">
             </div>
             <br>
+            <p id="form_error"></p>
             <div class="form_button">
               <input type="submit" value="Check Availability">
               <input type="reset" value="Reset">
