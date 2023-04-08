@@ -58,19 +58,18 @@ function validateForm() {
     let time = document.getElementById("Time").value;
     let visitor = document.getElementById("visitor").value;
     let formError = document.getElementById("form_error");
-    // check if date and visitor number are filled and not all-spaces
+    // check if date and visitor number are filled and not spaces
     if (date.trim() == "" || visitor.trim() == "") {
         formError.innerHTML = formErr;
         formError.display = "block";
-        return false; // cancel form submission
-    }
-    // validation passed
-    formError.innerHTML = "";
-    formError.display = "none";
-    if (reserve(date, time, visitor)) {
-        alert(formRes[1]);
     } else {
-        alert(formRes[0]);
+        formError.innerHTML = "";
+        formError.display = "none";
+        if (reserve(date, time, visitor)) {
+            alert(formRes[1]);
+        } else {
+            alert(formRes[0]);
+        }
     }
     return false; // cancel form submission
 }
